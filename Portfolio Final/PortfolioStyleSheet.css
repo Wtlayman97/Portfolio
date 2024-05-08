@@ -1,0 +1,100 @@
+.menu {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events to prevent interaction */
+    position: absolute;
+    top: 150px; /* Adjust the top value to position the menu below the header */
+    right: 20px; /* Adjust the right value to position the menu from the right edge */
+    background-color: white; /* Optional: Set a background color for the menu */
+    padding: 10px; /* Optional: Add padding to the menu */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-20px);
+    overflow: hidden;
+    z-index: 1; /* Ensure the menu is above other elements */
+}
+
+.menu.show {
+    opacity: 1;
+    pointer-events: auto; /* Enable pointer events when menu is shown */
+    transform: translateY(0);
+}
+.menu ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+.menu-item {
+    opacity: 0; /* Initially, hide the menu items */
+    transform: translateY(-50px); /* Move the items up by 50px */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu.show .menu-item:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu.show .menu-item:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s; /* Delay the animation for the second item by 0.1s */
+}
+
+.menu.show .menu-item:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s; /* Delay the animation for the third item by 0.2s */
+}
+.menu.show .menu-item:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s; /* Delay the animation for the third item by 0.2s */
+}
+.menu.show .menu-item:nth-child(5) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s; /* Delay the animation for the third item by 0.2s */
+}
+.menu.show .menu-item:nth-child(6) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s; /* Delay the animation for the third item by 0.2s */
+}
+nav{
+    padding: 1rem;
+    display: flex;
+    background-color: #FFFFFF;
+}
+.hamburger{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+.hamburger span{
+    height: 5px;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+.hamburger span:nth-child(1){
+    top:25%;
+}
+.hamburger span:nth-child(3){
+    top: 75%;
+}
+.hamburger.active span:nth-child(1){
+    top:50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+    opacity:0;
+}
+.hamburger.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
