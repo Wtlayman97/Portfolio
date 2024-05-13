@@ -73,9 +73,11 @@ nav{
     top: 20px;
 }
 .hamburger{
-    height: 50px;
+    height: 3.125rem;
     width: 50px;
-    position: relative;
+    position: fixed;
+    top:20px;
+    right:20px;
 }
 .hamburger span{
     height: 5px;
