@@ -181,6 +181,7 @@ h1{
     font-family:'Courier New', Courier, monospace;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 body{
     font-family: 'Courier New', Courier, monospace
