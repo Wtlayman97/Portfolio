@@ -190,3 +190,30 @@ body{
     height: 65px;
     width: 63px;
 }
+body.dark{
+    background-color: #121212;
+    color: white;
+    font-family: "Lucida Console";
+    transition: background-color 0.3s, color 0.3s;
+}
+body.light{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+}
+body.dark #Title{
+    color: #fff;
+    font-family: "Lucida Console";
+    text-shadow:
+        0 0 5px #2196F3,
+        0 0 10px #2196F3,
+        0 0 15px #2196F3,
+        0 0 20px #2196F3,
+        0 0 25px #2196F3,
+        0 0 30px #2196F3,
+        0 0 35px #2196F3;
+    transition: text-shadow 0.7s, color 0.3s;
+}
+body.dark .hamburger span{
+    background-color: #FFFFFF;
+}
