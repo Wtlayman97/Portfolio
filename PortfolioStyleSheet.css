@@ -175,16 +175,16 @@ input:checked + .slider:before{
 }
 .dark-mode-text{
     margin-top: 5px;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Lucida Console', Courier, monospace
 }
 h1{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Lucida Console', Courier, monospace;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 body{
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Lucida Console', Courier, monospace;
 }
 .logo{
     height: 65px;
